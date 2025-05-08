@@ -1,0 +1,24 @@
+<p>Interpolação</p>
+
+<p>Nome: {{name}}</p>
+<p>Idade: {{age}}</p>
+
+<h2>Objeto </h2>
+<!-- primeiro acessa o objeto e depois com o . o atributo -->
+<p>Marca: {{car.make}}</p>
+<p>Modelo: {{car.model}}</p>
+
+<h2>Acessar o Array</h2>
+
+<p>{{hobbies[0]}}</p>
+
+<ul>
+  @for(hobbie of hobbies; track $index){
+    <!-- vai percorrer um por um dos hobbie -->
+    <li>{{hobbie}}</li>
+  }
+</ul>
+
+<!-- <img src = {{imageUrl}} alt="Imagem de Flor"> -->
+<!-- Diretiva do src para imgs -->
+<img [src]="imageUrl" alt="Imagem de Flor">
